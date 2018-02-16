@@ -20,8 +20,6 @@ type Configuration struct {
 var conf *Configuration
 
 func init() {
-	fmt.Println("initialized")
-
 	conf = &Configuration{}
 
 	flag.StringVar(&conf.address, "address", DefaultAddress, "Address for host")
